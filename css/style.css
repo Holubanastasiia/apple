@@ -4,6 +4,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -136,20 +137,16 @@ hr {
 
 .footer {
   display: flex;
-  justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  justify-content: space-between;
+  padding: 40px 355px 60px 355px;
 }
 
 .footer__menu {
-  display: inline-table;
   margin-right: 115px;
 }
 
-.footer__menu-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.footer__menu:last-child {
+  margin-right: 0;
 }
 
 .footer__menu p {
@@ -160,7 +157,7 @@ hr {
   color: #cacaca;
 }
 
-.footer__items {
+.footer__item {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.02em;
@@ -168,6 +165,6 @@ hr {
   padding-bottom: 10px;
 }
 
-.footer__items:hover {
+.footer__item:hover {
   color: #86b6cc;
 }
